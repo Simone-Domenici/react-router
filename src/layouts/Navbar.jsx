@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import Header from '../components/Header';
 
 function Navbar() {
   return (
     <>
-      <nav>
+      <nav className='navbar'>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/about">About Us</NavLink>
+        <NavLink to="/posts">All Posts</NavLink>
       </nav>
     </>
   );
