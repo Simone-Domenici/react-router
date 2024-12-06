@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import DefaultLayout from './layouts/DefaultLayout';
 import About from './pages/About';
 import AllPosts from './pages/AllPosts';
+import BlankLayout from './layouts/BlankLayout';
+import NotFound from './pages/NotFound';
 
 function App(){
   return (
@@ -14,6 +16,9 @@ function App(){
           <Route path='/about' element={<About />} />
           <Route path='/posts' element={<AllPosts />} />
         </Route>
+        <Route element={<BlankLayout />}>
+            <Route path='*' Component={NotFound} ></Route>
+          </Route>
       </Routes>
     </BrowserRouter>
   );

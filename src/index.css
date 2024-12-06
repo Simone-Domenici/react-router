@@ -86,3 +86,16 @@ body {
 .view-all a:hover {
   background: #555;
 }
+
+.blank-layout{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  min-height: 100vh;
+  font-size: 2rem;
+  a{
+    color: lime;
+    text-decoration: none;
+  }
+}
