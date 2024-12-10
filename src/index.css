@@ -115,3 +115,62 @@ li{
 .title{
   font-size: 2.3rem;
 }
+
+/* PostDetail Component */
+.post-detail {
+  max-width: 800px;
+  margin: auto;
+  color: lightslategrey;
+  text-align: center;
+}
+
+.post-detail h1 {
+  font-size: 2.5rem;
+  color: lightcoral;
+}
+
+.post-detail img {
+  max-width: 100%;
+  margin: 1rem 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.post-detail p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: whitesmoke;
+  margin: 1rem 0;
+}
+
+.post-detail div {
+  margin: 2rem 0;
+}
+
+.post-detail a {
+  color: white;
+  background: #333;
+  padding: 10px 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.post-detail a:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 1rem;
+  background: darkred;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: crimson;
+}

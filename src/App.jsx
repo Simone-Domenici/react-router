@@ -6,6 +6,7 @@ import About from './pages/About';
 import AllPosts from './pages/AllPosts';
 import BlankLayout from './layouts/BlankLayout';
 import NotFound from './pages/NotFound';
+import PostDetail from './pages/PostDetail';
 
 function App(){
   return (
@@ -14,7 +15,10 @@ function App(){
         <Route element={<DefaultLayout />}>
           <Route path="/" element={<Home />} />
           <Route path='/about' element={<About />} />
-          <Route path='/posts' element={<AllPosts />} />
+          <Route path='/posts'>
+            <Route index Component={AllPosts} />
+            <Route path=':id' element={<PostDetail />} />
+          </Route>
         </Route>
         <Route element={<BlankLayout />}>
             <Route path='*' Component={NotFound} ></Route>
