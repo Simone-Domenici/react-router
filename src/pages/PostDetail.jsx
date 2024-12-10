@@ -21,10 +21,12 @@ export default function PostDetail() {
   }, []);
 
   const deletePost = () => {
-    axios.delete(`http://localhost:3000/posts/${id}`)
-      .then(() => navigate('/posts'))
-      .catch(err => console.error(err));
-  };
+    if (confirm('Do you want to delete this post?')){
+        axios.delete(`http://localhost:3000/posts/${id}`)
+        .then(() => navigate('/posts'))
+        .catch(err => console.error(err));
+        };
+    }
 
   if (!post) return( 
       <>

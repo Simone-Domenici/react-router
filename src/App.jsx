@@ -7,6 +7,7 @@ import AllPosts from './pages/AllPosts';
 import BlankLayout from './layouts/BlankLayout';
 import NotFound from './pages/NotFound';
 import PostDetail from './pages/PostDetail';
+import CreatePost from './pages/posts/CreatePost';
 
 function App(){
   return (
@@ -18,6 +19,7 @@ function App(){
           <Route path='/posts'>
             <Route index Component={AllPosts} />
             <Route path=':id' element={<PostDetail />} />
+            <Route path='create' element={<CreatePost />} />
           </Route>
         </Route>
         <Route element={<BlankLayout />}>
