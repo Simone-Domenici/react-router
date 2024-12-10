@@ -290,3 +290,8 @@ form select {
   cursor: default;
 }
 
+.view-detail{
+  text-decoration: none;
+  color: lime;
+}
+
