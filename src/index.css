@@ -237,3 +237,56 @@ form select {
 }
 
 
+/* Pagination */
+
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link{
+  text-decoration: none;
+  color: lime;
+  margin-bottom: 20px;
+  display: block;
+  font-size: 1.2rem;
+}
+
+.filter-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background: #1a1a1a;
+  color: white;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.page-button:hover {
+  background-color: #555;
+}
+
+.page-button.active {
+  background-color: red;
+  color: white;
+  cursor: default;
+}
+
